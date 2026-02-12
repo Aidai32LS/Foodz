@@ -30,6 +30,7 @@
     justify-content: space-between;
     gap: 32px;
     align-items: center;
+
 }
 
 .header__ringht button{
@@ -113,9 +114,36 @@
     text-align: center;
 }
 
+.hero__food{
+    width: 553px;
+    height: 553px;
+    margin-top: 95px;
+}
+
 .hero__right{
     display: flex;
     position: relative;
+}
+
+.hero__circle{
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: -10%;
+
+}
+
+.hero__souse, .hero__sticks{
+    position: absolute;
+}
+
+.hero__sticks{
+    bottom: 0;
+}
+
+.hero__souse{
+    right: -7%;
+    top: 3%;
 }
 
 .hero__right img{
@@ -567,3 +595,84 @@ footer .container{
 .image{
     margin-top: 72px;
 }
+
+@media (max-width){
+    .hero__left h1{
+        font-size: 56px;
+    }
+
+    .hero__desc{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media (max-width: 500px) {
+    .header__left img{
+        width: 59px;
+        height: 18px;
+    }
+    
+    .container{
+        padding: 0 24px;
+    }
+
+    .header__ringht{
+        display: none;
+    }
+
+    .burger{
+        width: 16px;
+        height: 2px;
+        background: #777E90;
+        border-radius: 10px;
+        display: block;
+        position: relative;
+    }
+
+    .burger::after{
+        width: 16px;
+        height: 2px;
+        background: #777E90;
+        border-radius: 10px;
+        content: "";
+        display: block;
+        position: relative;
+        top: 6px;
+    }
+
+    .hero__left h1{
+    font-size: 32px;
+    font-weight: 400px;
+    font-family: "Alice", sans-serif;
+    margin: 60px ;
+    }
+
+    .hero__left p{
+        color: #777E90;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+    }
+
+    .hero__explore p{
+        display: none;
+    }
+
+    .hero__explore button{
+    width: 137px;
+    height: 44px;
+    background: #04B90B;
+    color: #FCFCFD;
+    border-radius: 8px;
+    border: none;
+    }
+
+
+}
+
+
+
+
